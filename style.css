@@ -63,7 +63,7 @@
   width: 70px;
 }
 .link {
-  width: 35%;
+  width: 30%;
   list-style-type: none;
 }
 ul {
@@ -221,13 +221,20 @@ footer {
 }
 .lessons {
   min-width: 230px;
-  max-width: 450px;
-  height: 280px;
+  max-width: 400px;
+  height: 310px;
   flex-grow: 1;
   padding: 10px;
   border-radius: 18px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
+.lessons p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+
 .lessons iframe {
   border-radius: 18px;
   margin-bottom: 18px;
@@ -267,14 +274,14 @@ footer {
   background-color: #dddddd;
 }
 .books h2 {
-  margin: 18px 0px;
+  margin: 16px 0px;
 }
 .books p {
-  margin: 18px 0px;
+  margin: 16px 0px;
 }
 .books img {
   min-width: 230px;
-  height: 300px;
+  height: 280px;
   border-radius: 5px;
   margin-bottom: 10px;
 }
