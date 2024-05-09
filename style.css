@@ -3,7 +3,7 @@
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
 }
-/* Ro'yhatdan o'tish oynasining stilini belgilash */
+/* Ro'yhatdan o'tish oynasining stili */
 .overlay {
   position: fixed;
   top: 0;
@@ -16,6 +16,8 @@
   align-items: center;
 }
 .overlay-content {
+  width: 60%;
+  margin: auto;
   background-color: white;
   padding: 20px;
   border-radius: 5px;
@@ -24,14 +26,14 @@
 .close {
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 20%;
   font-size: 30px;
   cursor: pointer;
 }
 .material-symbols-outlined {
   cursor: pointer;
 }
-/* tugadi*/
+/*end*/
 .nav {
   margin: 0 auto;
   margin-top: 20px;
@@ -48,14 +50,17 @@
   width: 100px;
 }
 .logo {
-  width: 15%;
+  width: 20%;
   display: flex;
   align-items: center;
   margin-left: 18px;
   gap: 20px;
 }
 .logo h3 {
-  font-size: 28px;
+  font-size: 25px;
+}
+.logo img {
+  width: 70px;
 }
 .link {
   width: 35%;
@@ -134,12 +139,10 @@ input[type="email"] {
   border-radius: 15px 0px 0px 15px;
   width: 50%;
   box-sizing: border-box;
-  /* margin-bottom: 10px; */
 }
 
 input[type="submit"] {
-  /* padding: 10px 20px; */
-  background-color: #f93b37;
+  background-color: #576c75;
   color: white;
   border: none;
   border-radius: 0px 15px 15px 0px;
@@ -149,7 +152,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #65aa55;
+  background-color: #274043;
 }
 
 .courses {
@@ -159,20 +162,42 @@ input[type="submit"]:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
 }
-.courses .box {
+.box {
   position: relative;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
+  min-width: 180px;
+  flex-grow: 1;
   padding: 18px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   transition: transform 0.3s ease;
 }
+.box a {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
 .courses .box:hover {
   transform: scale(1.05);
+}
+#showMoreButton {
+  background-color: #576c75;
+  border: none;
+  color: white;
+  border-radius: 18px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+#showMoreButton:hover {
+  background-color: #274043;
 }
 footer {
   margin: auto;
@@ -196,6 +221,7 @@ footer {
 }
 .lessons {
   min-width: 230px;
+  max-width: 450px;
   height: 280px;
   flex-grow: 1;
   padding: 10px;
@@ -216,9 +242,6 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-.logo img {
-  width: 100px;
-}
 .downloads {
   margin: auto;
   margin-top: 80px;
@@ -229,10 +252,9 @@ footer {
   text-align: center;
   flex-wrap: wrap;
   gap: 50px;
-  /* background: #f5f6f7; */
 }
 .books {
-  /* flex-grow: 1; */
+  max-width: 300px;
   background-color: #f9f9f9;
   padding: 18px;
   border-radius: 18px;
